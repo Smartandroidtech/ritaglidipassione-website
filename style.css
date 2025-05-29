@@ -205,8 +205,9 @@ ul {
 }
 
 .navbar-inner-container {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 90%;
     max-width: 1200px; /* Leggermente più largo per la navbar */
@@ -236,17 +237,21 @@ ul {
 }
 
 .hamburger-btn {
-    display: none; /* Mostrato solo su mobile */
+    display: block;
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
     z-index: 1001; /* Sopra il mobile panel quando è chiuso */
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .hamburger-btn svg { width: 28px; height: 28px; color: var(--primary-color); }
 
 .desktop-nav-left, .desktop-nav-right {
-    display: flex;
+    display: none;
     align-items: center;
 }
 .main-menu { display: flex; gap: 25px; }
@@ -511,10 +516,7 @@ ul {
     .nav-logo { margin: 0; } /* Rimuovi margini laterali per desktop */
     .desktop-nav-left, .desktop-nav-right { display: flex; } /* Mostra menu desktop */
     .navbar-inner-container {
-        /* Per centrare il logo con flex: */
-        /* 1. desktop-nav-left e desktop-nav-right devono avere larghezze definite o
-           2. nav-logo con margin auto o flex-grow su elementi spacer */
-        /* Semplice: lasciare che flex li distribuisca */
+        justify-content: space-between;
     }
 
     .hero-content {

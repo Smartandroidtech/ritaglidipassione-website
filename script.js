@@ -26,11 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Chiudi il menu mobile quando si clicca su un link
+    // Chiudi il menu mobile quando si clicca su un link (escludendo dropdown)
     const mobileNavLinks = mobileNavPanel.querySelectorAll('a');
     mobileNavLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (mobileNavPanel.classList.contains('open')) {
+        link.addEventListener('click', (e) => {
+            // Chiudi solo se il pannello è aperto e non è un toggle di dropdown
+            if (mobileNavPanel.classList.contains('open') && !link.classList.contains('mobile-dropdown-toggle')) {
                 hamburgerToggle.click(); // Simula click per chiudere
             }
         });
@@ -116,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             // Chiudi il menu mobile se aperto e se il link è interno
-            if (mobileNavPanel.classList.contains('open') && this.hash !== "") {
+            if (mobileNavPanel.classList.contains('open') && this.hash !== "" && !this.classList.contains('mobile-dropdown-toggle')) {
                  hamburgerToggle.click();
             }
         });
