@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Su di me – Ritagli di Passione</title>
+
+  <!-- collega gli stessi Google Fonts e Material Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- collega il CSS esterno -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+<header class="site-header">
+    <!-- NAVBAR (copied from index.html) -->
+    <nav class="navbar" id="main-navbar">
+        <div class="navbar-inner-container">
+            <button class="hamburger-btn" id="hamburger-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNavPanel">
+                <svg class="icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                <svg class="icon-close" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+
+            <div class="desktop-nav-left">
+                <ul class="main-menu">
+                    <li class="menu-item has-dropdown">
+                        <a href="#shop">Shop <span class="material-icons">keyboard_arrow_down</span></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#shop-tazze">Tazze</a></li>
+                            <li><a href="#shop-piattini">Piattini</a></li>
+                            <li><a href="#shop-vasi">Vasi</a></li>
+                            <li><a href="#shop-ciondoli">Ciondoli</a></li>
+                            <li><a href="#shop-decorazioni">Articoli per la casa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="index.html#top" class="nav-logo">
+                <img src="assets/logo.svg" alt="Logo Ritagli di Passione" class="nav-logo-image">
+                Ritagli di Passione
+            </a>
+
+            <div class="desktop-nav-right">
+                <ul class="main-menu">
+                    <li><a href="index.html#chi-siamo">Chi sono</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-nav-panel" id="mobileNavPanel" aria-hidden="true">
+            <ul class="mobile-main-menu">
+                <li class="menu-item has-dropdown-mobile">
+                    <a href="#shop" class="mobile-dropdown-toggle" aria-expanded="false">Shop <span class="material-icons">keyboard_arrow_down</span></a>
+                    <ul class="mobile-dropdown-content">
+                        <li><a href="#shop-tazze">Tazze</a></li>
+                        <li><a href="#shop-piattini">Piattini</a></li>
+                        <li><a href="#shop-vasi">Vasi</a></li>
+                        <li><a href="#shop-ciondoli">Ciondoli</a></li>
+                        <li><a href="#shop-decorazioni">Articoli per la casa</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#chi-siamo">Chi sono</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- HERO BANNER FULL‑WIDTH -->
+    <section class="about-banner">
+    </section>
+
+    <!-- CONTAINER #1 – immagine sinistra, testo destra -->
+    <section class="about-container align-left animate-on-scroll">
+        <div class="about-image">
+            <img src="assets/about_me_img_1.png"
+                 alt="Rita al tornio mentre modella l'argilla">
+        </div>
+        <div class="about-text">
+            <h2>Il mio primo amore: il cucito</h2>
+            <p>Fin da piccola ho avuto una passione per il cucito. È stato il mio primo incontro con il mondo dell’artigianato, quello che ha acceso in me la scintilla della creatività.</p>
+            <p>Con ago e filo ho iniziato a costruire il mio modo di esprimermi, scoprendo quanta bellezza si nasconde nei dettagli fatti a mano.</p>
+        </div>
+    </section>
+
+    <!-- CONTAINER #2 – testo sinistra, immagine destra -->
+    <section class="about-container align-right animate-on-scroll">
+        <div class="about-image">
+            <img src="assets/about_me_img_2.png"
+                 alt="Smalti pastello allineati in laboratorio">
+        </div>
+        <div class="about-text">
+            <h2>La scoperta della ceramica</h2>
+            <p>Col tempo ho incontrato un nuovo amore: la ceramica. È stato un colpo di fulmine. Da quel momento non l’ho più lasciata.</p>
+            <p>Modellare l’argilla, sperimentare con forme e colori, mi fa sentire libera e viva. È un linguaggio silenzioso che parla di me, delle mie emozioni e della mia fantasia.</p>
+        </div>
+    </section>
+
+    <!-- CONTAINER #3 – immagine sinistra, testo destra -->
+    <section class="about-container align-left animate-on-scroll">
+        <div class="about-image">
+            <video src="assets/about_me_video_3.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="about-text">
+            <h2>Il mio rifugio creativo</h2>
+            <p>Il cucito e la ceramica sono diventati il mio porto sicuro. Quando creo, mi sento a casa.</p>
+            <p>Sono strumenti con cui riesco a raccontarmi, a fermare il tempo, a trasformare le mie idee in oggetti che parlano di cura, passione e libertà.</p>
+        </div>
+    </section>
+
+    <!-- PROCESSO CREATIVO -->
+    <section id="processo" class="processo-section animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">Come Nasce la Magia</h2>
+            <div class="processo-grid">
+                <!-- STEP 1 -->
+                <div class="processo-step">
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12.5 11.5C12.5 10.12 11.38 9 10 9S7.5 10.12 7.5 11.5S8.62 14 10 14S12.5 12.88 12.5 11.5ZM10 5C6.46 5 3.48 6.06 1.07 7.94C2.54 8.92 3.78 9.67 4.95 10.32C6.57 9.53 8.25 9 10 9C11.75 9 13.43 9.53 15.05 10.32C16.22 9.67 17.46 8.92 18.93 7.94C16.52 6.06 13.54 5 10 5ZM19.93 7.94C21.46 8.92 22.5 10.12 22.93 11.5C22.5 12.88 21.46 14.08 19.93 15.06C18.54 16.02 17.07 16.82 15.45 17.41C16.57 18.5 17.5 19.88 18.09 21.38C19.31 20.91 20.44 20.19 21.43 19.24C22.43 18.29 23.18 17.13 23.62 15.82C24.02 14.64 24.02 13.36 23.62 12.18C23.18 10.87 22.43 9.71 21.43 8.76C20.44 7.81 19.31 7.09 18.09 6.62C17.5 5.12 16.57 3.5 15.45 2.59C17.07 3.18 18.54 3.98 19.93 4.94L19.93 7.94ZM8.55 17.41C6.93 16.82 5.46 16.02 4.07 15.06C2.54 14.08 1.5 12.88 1.07 11.5C1.5 10.12 2.54 8.92 4.07 7.94L4.07 4.94C5.46 3.98 6.93 3.18 8.55 2.59C7.43 3.5 6.5 5.12 5.91 6.62C4.69 7.09 3.56 7.81 2.57 8.76C1.57 9.71 0.82 10.87 0.38 12.18C-0.02 13.36 -0.02 14.64 0.38 15.82C0.82 17.13 1.57 18.29 2.57 19.24C3.56 20.19 4.69 20.91 5.91 21.38C6.5 19.88 7.43 18.5 8.55 17.41Z"></path>
+                        </svg>
+                    </div>
+                    <h3>1. L'Idea e l'Argilla</h3>
+                    <p>Tutto inizia con un'ispirazione e un panetto d'argilla, pronto a prendere forma tra le mie mani esperte.</p>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="processo-step">
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v2.14c1.72.45 3 2 3 3.86 0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.86 1.28-3.41 3-3.86V7zm2 5.8c.66 0 1.2-.54 1.2-1.2s-.54-1.2-1.2-1.2-1.2.54-1.2 1.2.54 1.2 1.2 1.2zM11 17.05c-1.3-.51-2.4-1.29-3.23-2.25L6.2 16.37C7.41 17.83 9.05 18.77 11 19.05V17.05zm5.77-2.2L15.2 13.28c.83.96 1.93 1.74 3.23 2.25v2.02c-1.95-.28-3.59-1.22-4.8-2.68z"></path>
+                        </svg>
+                    </div>
+                    <h3>2. Modellazione e Cottura</h3>
+                    <p>Con pazienza e precisione, l'oggetto prende vita. Poi, il calore del forno svela la sua vera natura.</p>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="processo-step">
+                    <div class="step-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M17.25 2.75a.75.75 0 00-1.06-.02L13 5.69l-1.06-1.06a.75.75 0 00-1.06 1.06L12.94 7.5H3.75a.75.75 0 000 1.5h9.19l-2.12 2.12a.75.75 0 001.06 1.06L14 10.06V19.5a.75.75 0 001.5 0V10.06l2.12 2.12a.75.75 0 101.06-1.06L16.56 9H19a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7a2 2 0 012-2h1.25a.75.75 0 000-1.5H5a3.5 3.5 0 00-3.5 3.5v7A3.5 3.5 0 005 21.5h14a3.5 3.5 0 003.5-3.5v-7A3.5 3.5 0 0019 7.5h-2.44l2.12-2.12a.75.75 0 00-.02-1.06L17.25 2.75zM19 9h-2.5a.75.75 0 00-.53.22L14.22 11H13V8.78l1.72-1.72a.75.75 0 00.28-.53V4.5l1.94-1.94.06.06L19 4.56V9z"></path>
+                        </svg>
+                    </div>
+                    <h3>3. Colore e Fantasia</h3>
+                    <p>Infine, colori e decorazioni donano personalità e allegria ad ogni creazione, rendendola unica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer-bottom" id="contatti">
+    <div class="container">
+        <p>&copy; <span id="currentYear"></span> Ritagli di Passione. Tutti i diritti riservati.</p>
+        <p>Un mondo di ceramiche fatte con amore e un pizzico di follia.</p>
+    </div>
+</footer>
+</body>
+</html>
