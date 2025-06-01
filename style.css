@@ -447,16 +447,17 @@ ul {
 .collezione-item {
     padding: 25px;
     border-radius: var(--border-radius);
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    transition: transform var(--transition-speed) ease;
 }
 .collezione-item:hover, .collezione-item:focus-within {
     transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 10px 20px rgba(179, 58, 58, 0.15);
 }
 .collezione-icon img {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    min-width: 120px;
+    max-width: 180px;
     border-radius: 50%;
     margin: 0 auto 15px auto;
     border: 3px solid var(--bg-color);

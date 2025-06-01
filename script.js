@@ -1,4 +1,33 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Base URL per lo shop
+    //const baseUrl = 'https://shop.ritaglidipassione.com';
+    const baseUrl = 'https://gn0k8a-7v.myshopify.com';
+
+    // Aggiorna i link del menu Shop
+    const piattiniLink = document.querySelector('a[href="#shop-piatti"]');
+    if (piattiniLink) {
+        piattiniLink.href = `${baseUrl}/collections/piatti-e-piattini`;
+        piattiniLink.target = '_blank';
+        piattiniLink.rel = 'noopener noreferrer';
+    }
+    const tazzeLink = document.querySelector('a[href="#shop-tazze"]');
+    if (tazzeLink) {
+        tazzeLink.href = `${baseUrl}/collections/tazze-e-bicchieri`;
+        tazzeLink.target = '_blank';
+        tazzeLink.rel = 'noopener noreferrer';
+    }
+    const accessoriLink = document.querySelector('a[href="#shop-accessori"]');
+    if (accessoriLink) {
+        accessoriLink.href = `${baseUrl}/collections/accessori`;
+        accessoriLink.target = '_blank';
+        accessoriLink.rel = 'noopener noreferrer';
+    }
+    const casaLink = document.querySelector('a[href="#shop-casa"]');
+    if (casaLink) {
+        casaLink.href = `${baseUrl}/collections/articoli-per-la-casa`;
+        casaLink.target = '_blank';
+        casaLink.rel = 'noopener noreferrer';
+    }
     // Gestione Anno Corrente Footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
 
