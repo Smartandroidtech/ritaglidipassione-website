@@ -688,3 +688,77 @@ ul {
         text-align: left;
     }
 }
+
+/* Shopify Buy Button Overrides */
+#collection-component-1748642046676 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 30px !important;
+}
+#collection-component-1748642046676 .shopify-buy__product {
+    font-family: var(--font-family-main) !important;
+    color: var(--text-color) !important;
+}
+#collection-component-1748642046676 .shopify-buy__product__title {
+    font-family: var(--font-family-headings) !important;
+    font-size: 1.5rem !important;
+    color: var(--primary-color) !important;
+    margin-bottom: 0.5em !important;
+}
+#collection-component-1748642046676 .shopify-buy__product__price {
+    font-family: var(--font-family-main) !important;
+    font-size: 1.2rem !important;
+    color: var(--text-color) !important;
+    margin-bottom: 0.75em !important;
+}
+#collection-component-1748642046676 .shopify-buy__btn,
+#collection-component-1748642046676 .shopify-buy__btn--secondary {
+    background-color: var(--primary-color) !important;
+    border-radius: var(--border-radius) !important;
+    font-family: var(--font-family-main) !important;
+    font-size: 1.1rem !important;
+    color: white !important;
+    padding: 12px 25px !important;
+    text-align: center !important;
+    transition: background-color var(--transition-speed) ease !important;
+}
+#collection-component-1748642046676 .shopify-buy__btn:hover,
+#collection-component-1748642046676 .shopify-buy__btn--secondary:hover {
+    background-color: #8c2d2d !important;
+}
+
+/* Custom Shopify Buy Button Classes */
+.shopify-custom-product-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 15px !important;
+}
+.shopify-custom-product-title {
+  font-family: var(--font-family-headings) !important;
+  color: var(--primary-color) !important;
+  font-size: 1.5rem !important;
+}
+.shopify-custom-product-price {
+  font-family: var(--font-family-main) !important;
+  color: var(--text-color) !important;
+  font-size: 1.2rem !important;
+}
+.shopify-custom-button,
+.shopify-custom-modal-button,
+.shopify-custom-cart-button {
+  background-color: var(--primary-color) !important;
+  border-radius: var(--border-radius) !important;
+  color: white !important;
+  font-family: var(--font-family-main) !important;
+  font-size: 1.1rem !important;
+  padding: 12px 25px !important;
+  text-align: center !important;
+  transition: background-color var(--transition-speed) ease !important;
+}
+.shopify-custom-button:hover,
+.shopify-custom-modal-button:hover,
+.shopify-custom-cart-button:hover {
+  background-color: #8c2d2d !important;
+}
