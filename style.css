@@ -157,9 +157,19 @@ ul {
 
 /* Posizionamento delle icone flottanti */
 #icon-heart1 { left: 8vw;  top: 2vh; width: 54px; height: 54px;}
-#icon-star1  { left: 80vw; top: 18vh; width: 42px; height: 42px;}
+#icon-flower1  { left: 80vw; top: 18vh; width: 42px; height: 42px;}
 #icon-heart2 { left: 15vw; top: 72vh; width: 46px; height: 46px;}
-#icon-star2  { left: 80vw; top: 75vh; width: 37px; height: 37px;}
+#icon-flower2  { left: 80vw; top: 75vh; width: 37px; height: 37px;}
+#icon-star1 { left: 9vw; top: 38vh; width: 50px; height: 50px; display: none; }
+
+#icon-star2 { right: 10vw; top: 34vh; width: 50px; height: 50px; display: none; }
+
+/* Nuove icone papera fluttuanti */
+#icon-duck1 { left: 5vw; top: 60vh; width: 50px; height: 50px; display: none; }
+#icon-duck2 { right: 5vw; top: 60vh; width: 50px; height: 50px; display: none; }
+#icon-duck1 .floating-icon-bouncer { animation-delay: 1.1s; }
+#icon-duck2 .floating-icon-bouncer { animation-delay: 1.2s; }
+.floating-icon-duck { fill: var(--decorative-blue); }
 
 #icon-cloud1 {
     top: 0px;
@@ -173,6 +183,7 @@ ul {
     width: 60px;
     height: 38px;
 }
+
 #icon-cloud3 {
     bottom: -10px;
     left: 50%;
@@ -182,14 +193,16 @@ ul {
 }
 /* Personalizzazione animazione bounce per ciascuna icona */
 #icon-heart1 .floating-icon-bouncer { animation-delay: 0s; }
-#icon-star1  .floating-icon-bouncer { animation-delay: 0.5s; }
+#icon-flower1  .floating-icon-bouncer { animation-delay: 0.5s; }
 #icon-cloud1 .floating-icon-bouncer { animation-delay: 0.8s;}
 #icon-heart2 .floating-icon-bouncer { animation-delay: 0.7s;}
-#icon-star2  .floating-icon-bouncer { animation-delay: 1.2s;}
+#icon-flower2  .floating-icon-bouncer { animation-delay: 1.2s;}
 #icon-cloud2 .floating-icon-bouncer { animation-delay: 1.6s;}
+#icon-star1 .floating-icon-bouncer { animation-delay: 0.9s; }
+#icon-star2 .floating-icon-bouncer { animation-delay: 1s; }
 /* Colori per le icone */
 .floating-icon-heart { fill: #E06D80; }
-.floating-icon-star  { fill: #F0DB7D; }
+.floating-icon-flower  { fill: #F0DB7D; }
 .floating-icon-cloud { fill: #B0E0E6; }
 
 /* Navbar */
@@ -360,8 +373,6 @@ ul {
 .mobile-dropdown-content li a { font-size: 1.2rem; padding: 8px 20px; color: var(--text-color); }
 .mobile-dropdown-content li a:hover { background-color: var(--primary-color); color: white; }
 
-
-
 /* Hero Section */
 .hero {
     background-color: var(--bg-color); /* Già settato nel body, ma per specificità */
@@ -409,11 +420,11 @@ ul {
     position: absolute;
     filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
 }
-.hero-star1 { top: -10px; left: -15px; width: 50px; animation-delay: 0.5s; }
-.hero-star2 { bottom: -5px; right: -20px; width: 45px; transform: rotate(20deg); animation-delay: 0.7s;}
+.hero-flower1 { top: -10px; left: -15px; width: 50px; animation-delay: 0.5s; }
+.hero-flower2 { bottom: -5px; right: -20px; width: 45px; transform: rotate(20deg); animation-delay: 0.7s;}
 .hero-cloud1 { top: 20%; right: -25px; width: 70px; animation-delay: 0.6s;}
 .hero-cloud2 { top: 60%; left: -30px; width: 60px; animation-delay: 0.8s; }
-.hero-star3 { bottom: 10%; left: 10%; width: 40px; animation-delay: 1s; }
+.hero-flower3 { bottom: 10%; left: 10%; width: 40px; animation-delay: 1s; }
 
 @keyframes fadeInSlideUp {
     from { opacity: 0; transform: translateY(20px); }
@@ -544,18 +555,25 @@ ul {
     .creazione-card img { height: 300px; }
 
     #icon-heart1 { left: 8vw;  top: 11vh; width: 54px; height: 54px;}
-    #icon-star1  { left: 75vw; top: 12vh; width: 42px; height: 42px;}
+    #icon-flower1  { left: 75vw; top: 12vh; width: 42px; height: 42px;}
     #icon-heart2 { left: 15vw; top: 65vh; width: 46px; height: 46px;}
-    #icon-star2  { left: 80vw; top: 70vh; width: 37px; height: 37px;}
+    #icon-flower2  { left: 80vw; top: 70vh; width: 37px; height: 37px;}
 }
 
 @media (min-width: 1024px) {
     .container { width: 80%; max-width: 1200px; }
     .hero-text h1 { font-size: 4.5rem; }
     .hero-image-container { width: 550px; height: 550px; }
-    .hero-star1 { width: 40px; top: -20px; left: -30px; }
-    .hero-star2 { width: 35px; bottom: -15px; right: -30px; }
+    .hero-flower1 { width: 40px; top: -20px; left: -30px; }
+    .hero-flower2 { width: 35px; bottom: -15px; right: -30px; }
     .hero-cloud1 { width: 60px; top: 15%; right: -40px;}
+}
+
+@media (min-width: 1800px) {
+    #icon-star1 { left: 18vw; top: 38vh; width: 50px; height: 50px; display: flex; }
+    #icon-star2 { right: 10vw; top: 34vh; width: 50px; height: 50px; display: flex;}
+    #icon-duck1 { left: 12vw; top: 28vh; width: 50px; height: 50px; display: flex; }
+    #icon-duck2 { right: 12vw; top: 60vh; width: 50px; height: 50px; display: flex; }
 }
 /* ——— ABOUT PAGE LAYOUT ——— */
 .about-banner {
