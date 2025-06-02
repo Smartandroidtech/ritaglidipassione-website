@@ -567,20 +567,22 @@ ul {
     .hero-flower1 { width: 40px; top: -20px; left: -30px; }
     .hero-flower2 { width: 35px; bottom: -15px; right: -30px; }
     .hero-cloud1 { width: 60px; top: 15%; right: -40px;}
+    #icon-star1 { left: 12vw; top: 58vh; width: 50px; height: 50px; display: flex; }
+    #icon-star2 { right: 10vw; top: 34vh; width: 50px; height: 50px; display: flex;}
+    #icon-duck1 { left: 12vw; top: 22vh; width: 50px; height: 50px; display: flex; }
+    #icon-duck2 { right: 12vw; top: 60vh; width: 50px; height: 50px; display: flex; }
 }
 
 @media (min-width: 1800px) {
-    #icon-star1 { left: 18vw; top: 38vh; width: 50px; height: 50px; display: flex; }
-    #icon-star2 { right: 10vw; top: 34vh; width: 50px; height: 50px; display: flex;}
-    #icon-duck1 { left: 12vw; top: 28vh; width: 50px; height: 50px; display: flex; }
-    #icon-duck2 { right: 12vw; top: 60vh; width: 50px; height: 50px; display: flex; }
+   
 }
 /* ——— ABOUT PAGE LAYOUT ——— */
 .about-banner {
     width: 100%;
     height: 420px;
     overflow: hidden;
-    background-image: url('https://thumbs.dreamstime.com/b/floral-teapot-cupcakes-still-life-illustration-354031683.jpg');
+    background-image: url('assets/bg_su_di_me_alt.JPG');
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
