@@ -506,11 +506,12 @@ ul {
 
 /* Footer */
 .site-footer-bottom {
-    background-color: #e8d3da; /* Un rosa leggermente più scuro del bg */
+    background-color: var(--bg-color);
     color: var(--text-color);
     text-align: center;
     padding: 30px 20px;
     font-size: 0.9rem;
+    border-top: 6px solid #ffffff; /* Divider bianco sottile */
 }
 .site-footer-bottom p { margin: 0; }
 
@@ -782,4 +783,22 @@ ul {
 .shopify-custom-modal-button:hover,
 .shopify-custom-cart-button:hover {
   background-color: #8c2d2d !important;
+}
+/* Richieste Personalizzate Section */
+.richieste-section {
+    padding: 60px 0;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.richieste-section h2 {
+    margin-bottom: 1rem;
+}
+
+.richieste-section p {
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
