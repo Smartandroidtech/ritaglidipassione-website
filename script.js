@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Base URL per lo shop
-    //const baseUrl = 'https://shop.ritaglidipassione.com';
-    const baseUrl = 'https://gn0k8a-7v.myshopify.com';
+    const baseUrl = 'https://shop.ritaglidipassione.com';
 
     // Aggiorna i link del menu Shop
     document.querySelectorAll('a[href="#shop-piatti"]').forEach(el => {
